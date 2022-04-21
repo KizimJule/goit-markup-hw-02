@@ -1,0 +1,68 @@
+
+/* main color #75757 */
+/* secondary color #212121 */
+/* white #FFFFFF */
+/* accent #2196F3 */
+/* background main #FFFFFF */
+/* background secondary #F5F4FA */
+/*background Эффективные решения для вашего бизнеса #2F303A*/
+
+:root {
+  --primary-text-color: #75757;
+  --title-text-color: #212121;
+  --accent-color: #2196F3 ;
+  --primary-white-color: #ffffff;
+}
+
+body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+}
+ul {
+    list-style: none;
+}
+.accent {
+    color: var(--accent-color);
+}
+.logo {
+    color: var(--title-text-color);
+}
+.logo:hover,
+.logo:focus {
+    color: var(--accent-color);
+}
+/*headder*/
+.site-nav .link {
+    color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+.adress-nav .link {
+    color: var(--title-text-color);
+}
+.adress-nav .link:hover,
+.adress-nav .link:focus {
+    color: var(--accent-color);
+}
+/*верхняя секция с кнопкой на странице студия*/
+.hero-title {
+    background-color: var(--title-text-color);
+    color: var(--primary-white-color);
+}
+.button-hero {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}
+/*секции*/
+.section-title {
+    color: var(--title-text-color);
+}
+.feature-list .title {
+    color: var(--title-text-color);
+}
+
+.team .title {
+    color: var(--title-text-color);
+}
