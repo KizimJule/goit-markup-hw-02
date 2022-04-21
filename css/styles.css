@@ -67,7 +67,7 @@ ul {
 }
 /*кнопки навигации портфолио*/
 .portfolio-nav .button {
-  background-color: var(----background-second-color);
+  background-color: var(--background-second-color);
   color: var(--title-text-color);
 }
 .portfolio-nav .button:hover,
