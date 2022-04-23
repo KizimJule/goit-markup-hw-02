@@ -14,12 +14,12 @@
   --background-second-color: #f5f4fa;
 }
 .body {
-  font-family: 'Roboto';
+  font-family: Roboto;
   font-style: normal;
   letter-spacing: 0.03em;
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
-  }
+}
 ul {
   list-style: none;
 }
@@ -92,7 +92,7 @@ ul {
   margin: -1px;
   border: 0;
   padding: 0;
-  
+
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -119,6 +119,7 @@ ul {
 
 /*кнопки навигации портфолио*/
 .portfolio-nav .button {
+  font-family: inherit;
   background-color: var(--background-second-color);
   color: var(--title-text-color);
   position: relative;
