@@ -14,11 +14,12 @@
   --background-second-color: #f5f4fa;
 }
 .body {
-  background-color: var(--primary-white-color);
-  color: var(--primary-text-color);
   font-family: 'Roboto';
   font-style: normal;
-}
+  letter-spacing: 0.03em;
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  }
 ul {
   list-style: none;
 }
@@ -30,7 +31,6 @@ ul {
   font-size: 26px;
   line-height: 31px;
   /* identical to box height */
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
   text-decoration: none;
 }
@@ -86,8 +86,17 @@ ul {
 
 /*секция benefits*/
 .visually-hidden {
-  position: fixed;
-  transform: scale(0);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .feature-list .title {
   text-transform: uppercase;
