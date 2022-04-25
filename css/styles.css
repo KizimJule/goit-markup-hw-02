@@ -1,4 +1,4 @@
-/* main color #75757 */
+/* main color #757575 */
 /* secondary color #212121 */
 /* white #FFFFFF */
 /* accent #2196F3 */
@@ -7,30 +7,29 @@
 /*background Эффективные решения для вашего бизнеса #2F303A*/
 
 :root {
-  --primary-text-color: #75757;
+  --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --background-second-color: #f5f4fa;
+  --address-footer-color: rgba(255, 255, 255, 0.6);
 }
 .body {
-  font-family: Roboto;
-  font-style: normal;
-  letter-spacing: 0.03em;
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
+  font-family: roboto, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.03em;
 }
 ul {
   list-style: none;
 }
 /*Шапка сайта*/
 .logo {
-  font-family: 'Raleway';
-  font-style: normal;
+  font-family: raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  /* identical to box height */
+  line-height: 1.71;
   color: var(--title-text-color);
   text-decoration: none;
 }
@@ -44,7 +43,7 @@ ul {
 .link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--title-text-color);
@@ -55,28 +54,25 @@ ul {
 }
 
 /*секция hero*/
+.hero {
+  background-color: var(--title-text-color);
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
-  /* or 136% */
-  text-align: center;
+  line-height: 1.36;
   letter-spacing: 0.06em;
+  text-align: center;
+  vertical-align: top;
   text-transform: uppercase;
   background-color: var(--title-text-color);
   color: var(--primary-white-color);
 }
 .button-hero {
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
-  /* identical to box height, or 188% */
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
+  line-height: 1.88;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   position: relative;
@@ -92,39 +88,83 @@ ul {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 .feature-list .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
   text-transform: uppercase;
+}
+.feature-list .desc {
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 /*секция our-work*/
+.work .section-title,
+.team .section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
 
 /*секция team*/
-.team .title {
-  color: var(--title-text-color);
+.team {
+  background-color: var(--background-second-color);
 }
 
 .section-title {
   color: var(--title-text-color);
   text-align: center;
 }
+.team .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--title-text-color);
+}
+.team .position {
+  font-size: 16px;
+  line-height: 1.19;
+}
 .feature-list .title {
   color: var(--title-text-color);
 }
 
+/*footer*/
+.footer .logo {
+  color: var(--primary-white-color);
+}
+.footer .logo:hover,
+.footer .logo:focus {
+  color: var(--accent-color);
+}
+.footer {
+  background-color: var(--title-text-color);
+}
+.footer .location {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primary-white-color);
+}
+.address-footer .link {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--address-footer-color);
+}
+.address-footer .link:hover,
+.address-footer .link:focus {
+  color: var(--accent-color);
+}
+
 /*кнопки навигации портфолио*/
 .portfolio-nav .button {
-  font-family: inherit;
   background-color: var(--background-second-color);
   color: var(--title-text-color);
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
 }
 .portfolio-nav .button:hover,
 .portfolio-nav .button:focus {
@@ -134,4 +174,10 @@ ul {
 /*секция картинок-ссылок*/
 .project .title-project {
   color: var(--title-text-color);
+}
+.project .title-one {
+  color: var(--primary-text-color);
+}
+.portfolio {
+  text-decoration: none;
 }
