@@ -15,12 +15,12 @@
   --address-footer-color: rgba(255, 255, 255, 0.6);
 }
 .body {
-  background-color: var(--primary-white-color);
-  color: var(--primary-text-color);
   font-family: roboto, sans-serif;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
 }
 ul {
   list-style: none;
@@ -31,8 +31,8 @@ ul {
   font-family: raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  color: var(--title-text-color);
   text-decoration: none;
+  color: var(--title-text-color);
 }
 .logo:hover,
 .logo:focus {
@@ -57,27 +57,27 @@ ul {
   background-color: var(--title-text-color);
 }
 .hero-title {
+  text-align: center;
+  vertical-align: top;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-align: center;
-  vertical-align: top;
   text-transform: uppercase;
   background-color: var(--title-text-color);
   color: var(--primary-white-color);
 }
 .button-hero {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  cursor: pointer;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
-  cursor: pointer;
 }
 
 /*секция benefits*/
@@ -112,8 +112,8 @@ ul {
   background-color: var(--background-second-color);
 }
 .section-title {
-  color: var(--title-text-color);
   text-align: center;
+  color: var(--title-text-color);
 }
 .team .title {
   font-weight: 500;
@@ -159,12 +159,13 @@ ul {
 }
 /*кнопки навигации портфолио*/
 .portfolio-nav .button {
-  background-color: var(--background-second-color);
-  color: var(--title-text-color);
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   cursor: pointer;
+  background-color: var(--background-second-color);
+  color: var(--title-text-color);
 }
 .portfolio-nav .button:hover,
 .portfolio-nav .button:focus {
@@ -173,10 +174,10 @@ ul {
 }
 /*секция картинок-ссылок*/
 .project .title-project {
-  color: var(--title-text-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--title-text-color);
 }
 .project .title-one {
   color: var(--primary-text-color);
