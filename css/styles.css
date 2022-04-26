@@ -18,12 +18,14 @@
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
   font-family: roboto, sans-serif;
-  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 ul {
   list-style: none;
 }
+
 /*Шапка сайта*/
 .logo {
   font-family: raleway, sans-serif;
@@ -146,14 +148,17 @@ ul {
 .footer {
   background-color: var(--title-text-color);
 }
+
 .footer .location {
   font-size: 14px;
   line-height: 1.71;
+  font-style: normal;
   color: var(--primary-white-color);
 }
 .address-footer .link {
   font-size: 14px;
   line-height: 1.71;
+  font-style: normal;
   color: var(--address-footer-color);
 }
 .address-footer .link:hover,
@@ -161,10 +166,17 @@ ul {
   color: var(--accent-color);
 }
 
+/*Страница Портфолио*/
+.portfolio {
+  text-decoration: none;
+}
 /*кнопки навигации портфолио*/
 .portfolio-nav .button {
   background-color: var(--background-second-color);
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
 }
 .portfolio-nav .button:hover,
 .portfolio-nav .button:focus {
@@ -174,10 +186,10 @@ ul {
 /*секция картинок-ссылок*/
 .project .title-project {
   color: var(--title-text-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 .project .title-one {
   color: var(--primary-text-color);
-}
-.portfolio {
-  text-decoration: none;
 }
